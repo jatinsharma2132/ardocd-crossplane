@@ -9,5 +9,9 @@ spec:
   compositionSelector:
     matchLabels:
       provider: gcp
+  resourceRef:
+    apiVersion: database.example.org/v1alpha1
+    kind: XPostgreSQLInstance
+    name: my-db-test-argocd
   writeConnectionSecretToRef:
     name: db-conn
